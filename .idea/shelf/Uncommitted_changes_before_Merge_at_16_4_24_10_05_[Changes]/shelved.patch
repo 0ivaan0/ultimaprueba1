@@ -1,0 +1,19 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/**\n * Clase principal que prueba la funcionalidad de las clases Deporte y GestorDeportes.\n */\npublic class Main {\n    public static void main(String[] args) {\n        // Crear algunos deportes\n        Deporte futbol = new Deporte(\"Fútbol\", 22);\n        Deporte baloncesto = new Deporte(\"Baloncesto\", 10);\n\n        // Crear un gestor de deportes\n        GestorDeportes gestor = new GestorDeportes();\n\n        // Agregar los deportes al gestor\n        gestor.agregarDeporte(futbol);\n        gestor.agregarDeporte(baloncesto);\n\n        // Imprimir la lista de deportes\n        System.out.println(\"Lista de deportes:\");\n        for (Deporte deporte : gestor.getDeportes()) {\n            System.out.println(\"Nombre: \" + deporte.getNombre() + \", Jugadores: \" + deporte.getCantidadJugadores());\n\n            System.out.println(\"hoal\");\n        }\n    }
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	(revision 47ee7e6d3c7127b6876335f47afec100a5f91f05)
++++ b/src/Main.java	(date 1713254755938)
+@@ -20,5 +20,7 @@
+             System.out.println("Nombre: " + deporte.getNombre() + ", Jugadores: " + deporte.getCantidadJugadores());
+ 
+             System.out.println("hoal");
++
++            //edit main
+         }
+     }
+\ No newline at end of file
